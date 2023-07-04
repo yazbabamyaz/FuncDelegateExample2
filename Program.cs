@@ -2,11 +2,11 @@
 {
     private static void Main(string[] args)
     {
-        Func<double, double> square = Square;
-        Console.WriteLine($"Karesi = {square(4)}");
+        Func<double, double> squareFunc = Square;
+        Console.WriteLine($"Karesi = {squareFunc(4)}");
 
-        Func<double, double> cubic = Cubic;
-        Console.WriteLine($"Küpü = {cubic(4)}");
+        Func<double, double> cubicFunc = Cubic;
+        Console.WriteLine($"Küpü = {cubicFunc(4)}");
 
         Func<string> goster= Show;
         goster.Invoke();
